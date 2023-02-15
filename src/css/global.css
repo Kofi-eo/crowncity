@@ -54,6 +54,23 @@ code {
   transform: translate(-50%, -50%);
 }
 
+.normald {
+  transition: all 2s ease-in-out;
+}
+
+.hero-text {
+  animation: text-grow 0.5s ease-in-out forwards;
+}
+
+@keyframes text-grow {
+  0% {
+    font-size: 9rem;
+  }
+  100% {
+    font-size: 16rem;
+  }
+}
+
 .slider-container {
   display: flex;
   flex-direction: column !important;
@@ -109,4 +126,8 @@ code {
   background-size: cover;
   background-position: center;
   height: 30rem;
+}
+
+.policies {
+  border-top: 2px solid gray;
 }

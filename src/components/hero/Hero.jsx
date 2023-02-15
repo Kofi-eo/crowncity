@@ -20,7 +20,7 @@ const Hero = () => {
       <div className='hero-container  grid grid-cols-1 md:grid-cols-3'>
         {/* Column 1*/}
         <div
-          className={`bg-blue-200 hero-col ${
+          className={`bg-blue-300 hero-col ${
             rotate === 2 ? 'stretch w-1/2' : ''
           }`}
           onClick={toggleRotate2}
@@ -32,14 +32,20 @@ const Hero = () => {
               rotate === 2 ? 'shoerot' : ''
             }`}
           />
-          <span className='text-white text-2xl lg:text-12xl md:text-8xl'>
+          <span
+            className={`text-white text-2xl lg:text-12xl md:text-8xl ${
+              rotate === 2 ? 'hero-text' : ''
+            }`}
+          >
             NEW
           </span>
         </div>
 
         {/* Column 2*/}
         <div
-          className={`bg-white hero-col ${rotate === 1 ? 'stretch' : ''}`}
+          className={`bg-white hero-col ${
+            rotate === 1 ? 'stretch' : 'normald'
+          }`}
           onClick={toggleRotate1}
         >
           <img
@@ -50,8 +56,9 @@ const Hero = () => {
             }`}
           />
           <span
-            className='lg:text-12xl text-2xl md:text-8xl 
-            '
+            className={`text-black text-2xl lg:text-12xl md:text-8xl ${
+              rotate === 1 ? 'hero-text' : ''
+            }`}
           >
             BOLD
           </span>
@@ -59,7 +66,7 @@ const Hero = () => {
 
         {/* Column 3*/}
         <div
-          className={`bg-pink-300 hero-col ${rotate === 3 ? 'stretch' : ''}`}
+          className={`bg-pink-400 hero-col ${rotate === 3 ? 'stretch' : ''}`}
           onClick={toggleRotate3}
         >
           <img
@@ -69,7 +76,11 @@ const Hero = () => {
               rotate === 3 ? 'shoerot' : ''
             }`}
           />
-          <span className='text-white text-2xl lg:text-12xl md:text-8xl w-auto'>
+          <span
+            className={`text-white text-2xl lg:text-12xl md:text-8xl ${
+              rotate === 3 ? 'hero-text' : ''
+            }`}
+          >
             FAST
           </span>
         </div>
