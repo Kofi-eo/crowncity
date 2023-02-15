@@ -17,10 +17,12 @@ const Navbar = () => {
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
     window.addEventListener('scroll', () => {
-      setScroll(window.scrollY > 100);
+      setScroll(window.scrollY > 300);
     });
     return () => {
-      setScroll({});
+      window.removeEventListener('scroll', () => {
+        setScroll(window.scrollY > 300);
+      });
     };
   }, []);
 

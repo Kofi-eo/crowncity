@@ -5,13 +5,17 @@ import data from '../../assets/data/Data.json';
 import { MdNavigateNext, MdNavigateBefore, MdCircle } from 'react-icons/md';
 
 const PopularShoes = () => {
-  const shoes = data.shoes;
+  const clothes = data.clothes;
 
   return (
     <div className='PS-container p-9'>
       <div className='heading flex flex-row justify-between'>
         <h6 className='text-4xl font-bold'>Popular Right Now</h6>
-        <div className='space-x-5 text-lg flex item-center justify-center'>
+        <div
+          className={`space-x-5 text-lg flex item-center justify-center ${
+            clothes.length < 5 ? 'hidden' : ''
+          }`}
+        >
           <button className=''>
             <MdNavigateBefore />
           </button>
@@ -45,7 +49,7 @@ const PopularShoes = () => {
         </Swiper> */}
 
         <div className='flex flex-row space-x-10'>
-          {shoes.map((product, index) => (
+          {clothes.map((product, index) => (
             <div key={index}>
               <img
                 src={product.Img}
@@ -56,7 +60,6 @@ const PopularShoes = () => {
                 <h3>{product.Name}</h3>
                 <span>${product.Price}</span>
               </div>
-              <span className='px-2 text-gray-500'>{product.Category}</span>
             </div>
           ))}
         </div>

@@ -4,25 +4,45 @@
       "Name": "Air Jordan 1 Low",
       "Price": 110.0,
       "Category": "Men's Shoes",
-      "Img": "/images/shoe1.png"
+      "Img": "/images/promos1.jpg"
     },
     {
       "Name": "Nike Air Max 90 Futura",
       "Price": 110.0,
       "Category": "Women's Shoes",
-      "Img": "shoe2.png"
+      "Img": "/images/promos2.jpg"
     },
     {
       "Name": "Nike Air Max 90",
       "Price": 110.0,
       "Category": "Men's Shoes",
-      "Img": "shoe3.png"
+      "Img": "/images/promos3.jpg"
     },
     {
       "Name": "Nike Air Max 90 Limited ",
       "Price": 110.0,
       "Category": "Unisex",
-      "Img": "shoe2.png"
+      "Img": "/images/promos3.jpg"
+    }
+  ],
+  "clothes": [
+    {
+      "Name": "Men's Nike Fleece",
+      "Price": 110.0,
+      "Category": "",
+      "Img": "/images/promoc1.jpg"
+    },
+    {
+      "Name": "Women's Nike Fleece",
+      "Price": 110.0,
+      "Category": "",
+      "Img": "/images/promoc2.jpg"
+    },
+    {
+      "Name": "Kid's Nike Fleece",
+      "Price": 110.0,
+      "Category": "",
+      "Img": "/images/promoc3.jpg"
     }
   ]
 }

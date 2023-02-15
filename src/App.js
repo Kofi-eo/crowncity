@@ -2,6 +2,7 @@ import './App.css';
 import Hero from './components/hero/Hero';
 import Navbar from './components/navbar/Navbar';
 import PopularShoes from './components/popular/PopularShoes';
+import PopularClothes from './components/popular/popularClothes';
 import PromoCard1 from './components/promo/PromoCard1';
 import PromoOne from './components/promo/PromoOne';
 import PromoTwo from './components/promo/PromoTwo';
@@ -15,6 +16,7 @@ function App() {
       <PromoOne />
       <PopularShoes />
       <PromoTwo />
+      <PopularClothes />
       <PromoCard1 />
       <Footer />
     </>

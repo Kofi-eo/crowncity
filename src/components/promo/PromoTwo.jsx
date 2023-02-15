@@ -3,7 +3,7 @@ import React from 'react';
 const PromoTwo = () => {
   return (
     <div>
-      <div className='flex flex-col justify-center items-center p-9 pt-9 md:pt-32 promo-one-container space-y-6'>
+      <div className='flex flex-col justify-center items-center p-9 pt-4 md:pt-8 promo-one-container space-y-6'>
         <h6 className='text-xl md:text-6xl uppercase font-black'>Fresh Air</h6>
         <span className='text-xl flex flex-col'>
           <span>

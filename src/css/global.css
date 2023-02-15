@@ -54,6 +54,11 @@ code {
   transform: translate(-50%, -50%);
 }
 
+.slider-container {
+  display: flex;
+  flex-direction: column !important;
+}
+
 .hero-col span {
   font-weight: 700;
   font-style: italic;
