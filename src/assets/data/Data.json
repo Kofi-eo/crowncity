@@ -1,0 +1,28 @@
+{
+  "shoes": [
+    {
+      "Name": "Air Jordan 1 Low",
+      "Price": 110.0,
+      "Category": "Men's Shoes",
+      "Img": "/images/shoe1.png"
+    },
+    {
+      "Name": "Nike Air Max 90 Futura",
+      "Price": 110.0,
+      "Category": "Women's Shoes",
+      "Img": "shoe2.png"
+    },
+    {
+      "Name": "Nike Air Max 90",
+      "Price": 110.0,
+      "Category": "Men's Shoes",
+      "Img": "shoe3.png"
+    },
+    {
+      "Name": "Nike Air Max 90 Limited ",
+      "Price": 110.0,
+      "Category": "Unisex",
+      "Img": "shoe2.png"
+    }
+  ]
+}

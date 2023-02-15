@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0 auto;
+  /* max-width: 1200px; */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.scrolled {
+  background-color: black;
+  transition: all 1s;
+  color: white !important;
+}
+
+.hero-container {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-container div {
+  position: relative;
+  padding-top: 1rem;
+  transition: width 1.5s ease-out;
+  -webkit-transition: width 1.5s ease-out;
+  -moz-transition: width 1.5s ease-out;
+}
+
+.hero-col img {
+  position: absolute;
+  max-width: 400px;
+  /* padding: 2rem; */
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-col span {
+  font-weight: 700;
+  font-style: italic;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  padding: 2rem;
+}
+
+.shoerot {
+  transform: translate(-50%, -50%) rotateX(10deg);
+  animation: rotate1 0.5s ease forwards;
+}
+
+@keyframes rotate1 {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(30deg);
+  }
+}
+
+.stretch {
+  z-index: 4;
+  /* width: 50vw; */
+  /* transform: scale(1.7); */
+  padding: 5rem;
+  animation: stretch1 0.5s ease-in-out forwards;
+}
+
+@keyframes stretch1 {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 60vw;
+  }
+}
+
+.promo-one-container h2 {
+  font-size: large;
+}
+
+.promo-card {
+  background-image: url('../../public/images/promoCardBg.png');
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+}
