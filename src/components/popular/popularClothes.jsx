@@ -16,26 +16,24 @@ const PopularShoes = () => {
             clothes.length < 5 ? 'hidden' : ''
           }`}
         >
+          {/* Previous Button */}
           <button className=''>
             <MdNavigateBefore />
           </button>
           <button className='text-md'>
             <MdCircle />
           </button>
+          {/* Next Button */}
           <button>
             <MdNavigateNext />
           </button>
         </div>
       </div>
-      {/* <Swiper> */}
+
       <div className='slider-container mt-10'>
         {/* <Swiper
           slidesPerView={3}
           navigation
-          pagination={{ clickable: true }}
-          autoplay={{ delay: 5000 }}
-          loop={true}
-          onSwiper={null}
           className='flex flex-row'
         >
           {shoes.map((product, index) => (
@@ -64,7 +62,6 @@ const PopularShoes = () => {
           ))}
         </div>
       </div>
-      {/* </Swiper> */}
     </div>
   );
 };

@@ -33,10 +33,10 @@ const Footer = () => {
           <div>
             <h2 className='text-lg font-medium pb-4'>Company</h2>
             <ul className='space-y-4 text-gray-500'>
-              <li>Features</li>
-              <li>FAQs</li>
-              <li>News</li>
-              <li>Pricing</li>
+              <li>Core values</li>
+              <li>Partner w/ us</li>
+              <li>Blog</li>
+              <li>Contact</li>
             </ul>
           </div>
           <div className='space-y-2 pb-4'>

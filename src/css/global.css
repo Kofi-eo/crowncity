@@ -44,6 +44,10 @@ code {
   -moz-transition: width 1.5s ease-out;
 }
 
+.hero-col {
+  transition: all 2s ease-in-out;
+}
+
 .hero-col img {
   position: absolute;
   max-width: 400px;
